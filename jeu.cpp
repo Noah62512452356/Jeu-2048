@@ -14,7 +14,7 @@ void Jeu::bouclePrincipale() {
     while(!fini) {
         grille.afficher();
 
-        cout << "Déplacement (Z = Haut, Q = Gauche, S = Bas, D = Droite) : ";
+        cout << "(Z = Haut, Q = Gauche, S = Bas, D = Droite) : ";
         char c;
         cin >> c;
         bool modif = false;

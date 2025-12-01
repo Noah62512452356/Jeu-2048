@@ -1,14 +1,12 @@
 #include "Grille.h"
 #include <iostream>
 #include <iomanip>
-#include <cstdlib>
 
 using namespace std;
 
 Grille::Grille(int t) 
     : taille(t), cellules(t, vector<Tuile>(t, Tuile(0))) {}
 
-// Réinitialise la marque "déjà fusionnée" de toutes les tuiles
 void Grille::resetFusionFlags() {
     for(int i = 0; i < taille; i++)
         for(int j = 0; j < taille; j++)
@@ -16,8 +14,7 @@ void Grille::resetFusionFlags() {
 }
 
 void Grille::afficher() const {
-    system("clear"); // Windows -> system("cls");
-    cout << "2048 - Utilisez les touches ZQSD ou WASD\n\n";
+    cout << "2048 : BONJOUR \n\n";
 
     for(int i = 0; i < taille; i++) {
         for(int j = 0; j < taille; j++) {
